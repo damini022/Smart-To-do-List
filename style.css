@@ -1,0 +1,220 @@
+
+
+
+.container {
+  max-width: 750px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #2a0a9f;
+  font-family: 'poppins', sans-sarif;
+}
+
+.input-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.input-group input,
+.input-group select,
+.input-group button {
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.input-group button {
+  background: #007bff;
+  color: white;
+  border: none;
+  transition: background 0.3s;
+}
+
+.input-group button:hover {
+  background: #0056b3;
+  cursor: pointer;
+}
+.input-group input,
+.input-group select,
+.input-group button {
+  flex: 1 1 200px; /* grow/shrink with min width */
+  min-width: 180px;
+}
+
+#taskList li {
+  display: flex;
+  flex-direction: column;
+  border-left: 6px solid #007bff;
+  padding: 14px 16px;
+  margin-bottom: 12px;
+  background: linear-gradient(to right, #ffffff, #f9f9f9);
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+}
+
+li.overdue {
+  border-left-color: #e74c3c;
+  background: #fff3f3;
+}
+
+li:hover {
+  transform: translateY(-2px);
+}
+
+li strong {
+  font-size: 16px;
+  color: #2c3e50;
+}
+
+li .countdown {
+  font-size: 13px;
+  font-style: italic;
+  margin-top: 4px;
+  color: #666;
+}
+
+.badges {
+  margin-top: 10px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 12px;
+  color: white;
+  font-weight: 600;
+}
+
+.priority-high {
+  background: #e74c3c;
+}
+
+.priority-medium {
+  background: #f39c12;
+  color: black;
+}
+
+.priority-low {
+  background: #27ae60;
+}
+
+.category-general {
+  background: #7f8c8d;
+}
+
+.category-work {
+  background: #3498db;
+}
+
+.category-personal {
+  background: #9b59b6;
+}
+
+.delete-btn {
+  margin-top: 12px;
+  align-self: flex-end;
+  color: #e74c3c;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.delete-btn:hover {
+  color: #c0392b;
+}
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(to right, #83a4d4, #b6fbff);
+  margin: 0;
+  padding: 30px;
+}
+
+.container {
+  max-width: 750px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 600px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .input-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .input-group input,
+  .input-group select,
+  .input-group button {
+    width: 100%;
+  }
+
+  #taskList li {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .delete-btn {
+    font-size: 12px;
+    align-self: flex-start;
+  }
+  }
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.task-enter {
+  animation: fadeIn 0.4s ease-out;
+}
+.welcome-banner {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 15px;
+  margin-bottom: 25px;
+  color: white;
+  background: linear-gradient(90deg, #ff416c, #ff4b2b, #ff6a00);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  animation: slideIn 0.8s ease-out;
+}
+
+/* Add this animation too */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
